@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import NumberFetcher from './NumberFetcher';
+import './corsConfig';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Average Calculator</h1>
+      <NumberFetcher numberType="even" /> {/* Fetch even numbers */}
+      <NumberFetcher numberType="primes" /> {/* Fetch prime numbers */}
+      <NumberFetcher numberType="fibo" /> {/* Fetch Fibonacci numbers */}
+      <NumberFetcher numberType="rand" /> {/* Fetch random numbers */}
     </div>
   );
-}
+};
 
 export default App;
