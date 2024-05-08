@@ -1,6 +1,6 @@
 import React from 'react';
 import NumberFetcher from './NumberFetcher';
-import './corsConfig';
+
 
 const App = () => {
   return (
